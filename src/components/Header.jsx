@@ -5,7 +5,7 @@ function Header({ user }) {
       <h2> Header file component: </h2>;
       {user.map((d, index) => {
         return (
-          <h3 id={index}>
+          <h3 key={index}>
             Name: {d.name} Age: {d.age} Email: {d.email}
           </h3>
         );
